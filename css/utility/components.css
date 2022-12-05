@@ -1,0 +1,54 @@
+.container {
+  max-width: 1400px;
+  box-sizing: border-box;
+  margin-inline: auto;
+  padding: 0 20px;
+}
+.button {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  width: max-content;
+  display: block;
+}
+
+/* Margin */
+.mg-b-120 {
+  margin-bottom: 120px;
+}
+.mg-b-80 {
+  margin-bottom: 80px;
+}
+.mg-b-72 {
+  margin-bottom: 72px;
+}
+.mg-b-60 {
+  margin-bottom: 60px;
+}
+.mg-b-48 {
+  margin-bottom: 48px;
+}
+.mg-b-40 {
+  margin-bottom: 40px;
+}
+.mg-b-32 {
+  margin-bottom: 2rem;
+}
+.mg-b-24 {
+  margin-bottom: 24px;
+}
+.mg-b-20 {
+  margin-bottom: 20px;
+}
+.mg-b-16 {
+  margin-bottom: 16px;
+}
+.mg-b-8 {
+  margin-bottom: 8px;
+}
+.mg-b-4 {
+  margin-bottom: 4px;
+}

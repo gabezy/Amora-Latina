@@ -1,0 +1,138 @@
+.header {
+  display: flex;
+  place-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.logo {
+  min-width: 160px;
+}
+.logo img {
+  width: 100%;
+}
+.link-list {
+  display: flex;
+  gap: 40px;
+}
+.link-list li {
+  width: fit-content;
+  align-self: center;
+}
+.login-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.login-list li {
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+}
+.login-list li:hover {
+  background-color: #c6c6c6;
+  border-radius: 50%;
+}
+.login-list img {
+  width: 100%;
+}
+
+.link-list li::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #760090;
+  transition: all 0.5s;
+}
+.link-list li:hover::after {
+  width: 100%;
+}
+/*  */
+
+.hamburger {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hamburger-btn {
+  border: 0px;
+  cursor: pointer;
+  font-size: 28px;
+  background: none;
+}
+.hamburger-btn:focus {
+  outline: none;
+}
+.hamburger ul {
+  display: flex;
+  gap: 20px;
+}
+.hamburger li {
+  width: 40px;
+  height: 40px;
+}
+.hamburger li img {
+  width: 100%;
+}
+.hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    display: none;
+  }
+  .hamburger {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    align-items: center;
+  }
+  .hamburger .logo {
+    z-index: 2;
+    justify-self: center;
+  }
+  .hamburger .logo img {
+    max-width: 180px;
+  }
+  .hamburger ul:nth-child(3) {
+    justify-self: end;
+    margin-right: 20px;
+  }
+  .hamburger-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background: #e57bfc;
+    min-height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  .hamburger-menu.activate {
+    left: 0%;
+  }
+  .hamburger-items {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
+    gap: 1rem;
+    margin-top: 140px;
+  }
+  .hamburger-items li {
+    width: 180px;
+    font-size: 20px;
+    background: rebeccapurple;
+    text-align: center;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .hamburger-btn {
+    z-index: 3;
+  }
+}

@@ -1,0 +1,58 @@
+.banner-intro {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  position: relative;
+}
+.banner-intro img {
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top;
+  width: 100vw;
+}
+.banner-intro a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  bottom: 50px;
+}
+.product-list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-list li {
+  display: flex;
+  flex-direction: column;
+}
+.product-list li > a {
+  display: block;
+  max-width: 660px;
+  position: relative;
+}
+.product-info {
+  position: absolute;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 60px;
+  right: 0;
+  top: 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: rgba(143, 143, 143, 0.7);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.product-info > * {
+  transform: translateY(20px);
+  transition: transform 0.4s;
+}
+.product-info:hover {
+  opacity: 1;
+}
+.product-info:hover > * {
+  transform: translateY(0);
+}

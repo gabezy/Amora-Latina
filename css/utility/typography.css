@@ -1,0 +1,39 @@
+:root {
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-display: "Playfair Display", serif;
+  --ff-link: "Playfair Display", serif;
+}
+
+.font-p-s {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+.font-p-m {
+  font-family: var(--ff-primary);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.font-p-l {
+  font-family: var(--ff-primary);
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.font-d {
+  font-family: var(--ff-display);
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.font-l {
+  font-family: var(--ff-link);
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.font-l-m {
+  font-family: var(--ff-link);
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 400;
+}
